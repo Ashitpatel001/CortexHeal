@@ -514,7 +514,7 @@ class DashboardAPIHandler(BaseHTTPRequestHandler):
         self._json({"status": "demo started", "duration": "~45 seconds", "steps": 3})
 
     def handle_system_status(self):
-    self._json({
+        self._json({
         "backend": True,
         "minikube": True,
         "victim_app": True,
