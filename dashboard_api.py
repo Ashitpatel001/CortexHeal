@@ -226,9 +226,6 @@ class DashboardAPIHandler(BaseHTTPRequestHandler):
 
     def do_OPTIONS(self):
         self.send_response(200)
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
         self.end_headers()
 
     def log_message(self, format, *args):
@@ -283,17 +280,14 @@ class DashboardAPIHandler(BaseHTTPRequestHandler):
             self.end_headers()
 
     def _json(self, payload):
-        
         try:
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-            self.send_header("Access-Control-Allow-Headers", "Content-Type")
             self.end_headers()
             self.wfile.write(json.dumps(payload).encode("utf-8"))
         except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError, OSError):
             pass
+        
 
     def handle_pods(self):
         status, metrics = self.get_pod_metrics()
