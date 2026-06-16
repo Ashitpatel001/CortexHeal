@@ -1,6 +1,5 @@
 <p align="center">
-  <!-- Replace this URL with your actual poster image path once uploaded to your repository -->
-  <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/682f490a-f0f2-4821-80a1-946fdc4a9fdb" />
+  <img src="assets/architecture.png" alt="CortexHeal Architecture" width="100%">
 </p>
 
 # eBPF-Driven Multi-Agent Swarm Orchestration For Kubernetes Self-Healing
@@ -30,9 +29,9 @@ The framework is engineered for non-intrusive, low-overhead data aggregation acr
 Full-spectrum visibility into your live Kubernetes cluster state.
 
 <p align="center">
-  <img width="821" alt="Dashboard" src="https://github.com/user-attachments/assets/c2f11b31-7c3f-40d5-80f7-84de5bd32a18" />
+  <img src="assets/dashboard_image.jpeg" alt="Grafana Dashboard" width="95%">
 </p>
-
+    
 ---
 
 ## High-Impact Observations & Features
@@ -63,8 +62,7 @@ Ensure you have access to a running Kubernetes cluster and `helm` installed loca
 kubectl cluster-info
 helm version
 # Add the required helm charts
-helm repo add prometheus-community [https://prometheus-community.github.io/helm-charts](https://prometheus-community.github.io/helm-charts)
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 
-# Install the monitoring suite
 helm install k8s-monitoring prometheus-community/kube-prometheus-stack
