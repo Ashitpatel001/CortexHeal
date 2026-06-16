@@ -30,12 +30,8 @@ The framework is engineered for non-intrusive, low-overhead data aggregation acr
 Full-spectrum visibility into your live Kubernetes cluster state.
 
 <p align="center">
-  <!-- Replace this with your actual dashboard screenshot path -->
-  <<img width="821" height="492" alt="image" src="https://github.com/user-attachments/assets/c2f11b31-7c3f-40d5-80f7-84de5bd32a18" />
->
+  <img width="821" alt="Dashboard" src="https://github.com/user-attachments/assets/c2f11b31-7c3f-40d5-80f7-84de5bd32a18" />
 </p>
-
-*Figure: Unified Command Center dashboard highlighting CPU Throttling, Memory Pressures, and Pod Restart frequencies.*
 
 ---
 
